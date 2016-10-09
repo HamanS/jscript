@@ -1,0 +1,70 @@
+  <!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Калькулятор</title>
+	<link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <header>
+	  <a href="index.html"><img src="web_logo.png" height="100" alt="Website Logo"></a>
+      <h1>Основы Web-технологий</h1>
+	  <nav>
+	    <ul class="nav_menu">
+		  <li><a href="index.html">Главная</a></li>
+		  <li><a href="web_tech.html">Web-технологии</a>
+		    <ul>
+			  <li><a href="html5.html">HTML5</a></li>
+			  <li><a href="css3.html">CSS3</a></li>
+			  <li><a href="javascript.html">JavaScript</a></li>
+		    </ul>
+		  </li>
+		  <li><a href="calculator.html">Калькулятор</a></li>
+		  <li><a href="test.html">Тест</a></li>
+		</ul>
+	  </nav>
+	</header>
+	<main>
+	 <form id="calculator" name="calculator" class="toptext">
+	  <table>
+		  <tr>
+			<td colspan="5" class="line"><input type="text" id="displ"  value="" readonly="readonly" /></td>
+		  </tr>
+		    <tr>
+			<td><button type="button" id="7" class="num" value="7">7</button></td>
+			<td><button type="button" id="8" class="num" value="8">8</button></td>
+			<td><button type="button" id="9" class="num" value="9">9</button></td>
+			<td><button type="button" id="divide" class="action" value="/">/</button></td>
+			<td><button type="button" id="delete" value="C">C</button></td>
+		  </tr>
+		  <tr>
+			<td><button type="button" id="4" class="num" value="4">4</button></td>
+			<td><button type="button" id="5" class="num" value="5">5</button></td>
+			<td><button type="button" id="6" class="num" value="6">6</button></td>
+			<td><button type="button" id="multiply" class="action" value="*">*</button></td>
+			<td><button type="button" id="plusmn" value="-+">&plusmn;</button></td>
+		  </tr>
+		    <tr>
+			<td><button type="button" id="1" class="num" value="1">1</button></td>
+			<td><button type="button" id="2" class="num" value="2">2</button></td>
+			<td><button type="button" id="3" class="num" value="3">3</button></td>
+			<td><button type="button" id="minus" class="action" value="-">-</button></td>
+			<td rowspan="2" id="res"><button type="button" id="result" class="r" value="=">=</button></td>
+	      </tr>
+		    <tr>
+			<td colspan="2"><button type="button" id="0" class="num" value="0">0</button></td>
+			<td><button type="button" id="point" value=".">.</button></td>
+			<td><button type="button" id="plus" class="action" value="+">+</button></td>
+		  </tr>
+		</table>
+       </form>		
+	  </main>	   
+	<footer>
+      <address>
+        <a href="http/:www.mail@mail">Пишите: mail@mail</a>
+      </address>
+	  <div>© Фамилия И.О., год</div>
+	</footer>
+	<script src="script.js"></script>
+  </body>
+</html>
